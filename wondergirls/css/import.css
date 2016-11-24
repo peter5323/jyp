@@ -1,0 +1,12 @@
+body {
+  width: 100%;
+  outline: 1px #F00 solid;
+}
+header h1 {
+  background-image: url("http://wondergirls.jype.com/images/logo-s.png");
+  width: 104px;
+  height: 52px;
+}
+header nav ul {
+  list-style: none;
+}
