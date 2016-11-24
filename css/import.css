@@ -1,0 +1,40 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background-image: url("http://missa.jype.com/images/bg-pc.jpg");
+  background-repeat: no-repeat;
+}
+body header {
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 10px #666;
+}
+body header h1 {
+  background-image: url("http://missa.jype.com/images/logo-s.png");
+  width: 104px;
+  height: 52px;
+  float: left;
+}
+body header nav {
+  float: right;
+}
+body header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body header li {
+  float: left;
+  height: 100px;
+  line-height: 100px;
+  padding: 42px 18px;
+}
+body header li a {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 10px;
+}
