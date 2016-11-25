@@ -1,26 +1,54 @@
+.bg_size(@a){
+  -webkit-background-size:@a;
+  background-color:@a;
+}
 
 
+*{margin:0; padding:0;}
+
+// widht 값을 기준으로 설정하면 창을 축소 시키면 아래쪽으로 빈 공간이 나타난다
+html,body{height:100%;}
 
 
 body{
-  width:100%;
-  .outline()
+
+  background-image: url(@bg_girls);
+
+ //  cover 는 배경 이미지의 가로, 세로 길이 모두 엘리먼트보다 크다라는 조건하에 가능한한 배경 이미지를 작게 조정합니다. 가로/세로 비율은 유지됩니다. 따라서 배경 이미지의 크기는 엘리먼트의 크기보다 항상 크거나 같습니다.
+ //
+ //
+ // -webkit-background-size: cover; -> 크롬에서 cover 적용
+ //  -moz-background-size: cover; -> 파이어폭스 에서 cover 적용
+ //  -o-background-size: cover; -> 오페라 에서 cover 적용
+ //  background-size: cover; -> cover 적용
+  .bg_size(cover);
+  background-repeat: no-repeat;
+  background-position: center 0;
 }
 
   header{
+    .outline();
+    height:100px;
 
     h1{
       background-image: url(@logo);
       width:104px;
       height:52px;
+      .outline();
+      float: left;
     }
     nav{
-
+      float:right;
+      .outline();
       ul{
         list-style: none;
 
 
         li{
+            display: inline;
+            vertical-align: middle;
+            
+            .outline();
 
 
         }
