@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+ul {
+  list-style: none;
+}
 html,
 body {
   height: 100%;
@@ -16,6 +19,7 @@ body {
 header {
   outline: 1px #F00 solid;
   height: 100px;
+  background-color: rgba(255, 255, 255, 0.53);
 }
 header h1 {
   background-image: url("http://wondergirls.jype.com/images/logo-s.png");
@@ -24,15 +28,30 @@ header h1 {
   outline: 1px #F00 solid;
   float: left;
 }
+header h1 a {
+  text-indent: -999px;
+  font-size: 0px;
+  display: block;
+  margin: 25px;
+  outline: 1px #F00 solid;
+}
 header nav {
   float: right;
-  outline: 1px #F00 solid;
+  border: 1px #F00 solid;
 }
-header nav ul {
-  list-style: none;
+header nav .main_manu {
+  display: none;
 }
-header nav ul li {
-  display: inline;
-  vertical-align: middle;
+header nav li {
+  float: left;
+  height: 100px;
+  line-height: 100px;
+}
+header nav li a {
   outline: 1px #F00 solid;
+  text-decoration: none;
+  padding: 0 18px;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
 }

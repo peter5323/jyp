@@ -5,13 +5,13 @@
 
 
 *{margin:0; padding:0;}
+ul{list-style: none;}
 
 // widht 값을 기준으로 설정하면 창을 축소 시키면 아래쪽으로 빈 공간이 나타난다
 html,body{height:100%;}
 
 
 body{
-
   background-image: url(@bg_girls);
 
  //  cover 는 배경 이미지의 가로, 세로 길이 모두 엘리먼트보다 크다라는 조건하에 가능한한 배경 이미지를 작게 조정합니다. 가로/세로 비율은 유지됩니다. 따라서 배경 이미지의 크기는 엘리먼트의 크기보다 항상 크거나 같습니다.
@@ -29,6 +29,7 @@ body{
   header{
     .outline();
     height:100px;
+    background-color: rgba(255, 255, 255, 0.53);
 
     h1{
       background-image: url(@logo);
@@ -36,23 +37,39 @@ body{
       height:52px;
       .outline();
       float: left;
+      a{
+        text-indent: -999px;
+        font-size: 0px;
+        // display:block;을 주고 margin을 줘야 마진값이 들어간다
+        display: block;
+        margin:25px;
+        .outline();
+      }
+
     }
     nav{
       float:right;
-      .outline();
-      ul{
-        list-style: none;
-
-
-        li{
-            display: inline;
-            vertical-align: middle;
-            
-            .outline();
-
-
+      border: 1px #F00 solid;
+        .main_manu{
+          display: none;
         }
-      }
-    }
+          li{
+            float:left;
+            height:100px;
+            line-height: 100px;
 
+
+            a{
+              .outline();
+              // <a> 태그 디자인 없게 만들기
+              text-decoration: none;
+              padding:0 18px;
+              // 마우스 영역을 넓게 만들기
+              display: block;
+              font-size: 16px;
+              font-weight: bold;
+
+            }
+          }
+    }
   }
