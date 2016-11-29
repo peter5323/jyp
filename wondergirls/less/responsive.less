@@ -1,0 +1,34 @@
+  // max-width는 반응형 웹에서 770px부터 미디어 스크린으로 보여줘라
+@media screen and (max-width:770px){
+  body{
+    // !important를 사용해서 실행이 되는지 확인
+    background-image: url(../image/bg-720.jpg);
+    background-position: center center;
+  }
+
+
+  header{
+    height:55px;
+
+    h1 a{
+      background-image: url(@logo);
+      width:60px;
+      height:40px;
+      background-position: center;
+      background-repeat: no-repeat;
+      display:block;
+      margin: :5px 0 0 10px;
+     //  text를 사라지게 하는 법
+      appearance: none;
+      text-indent: -999px;
+      font-size: 0px;
+       &:hover{
+         transform: rotateY(180deg);
+        }
+    }
+    nav{
+      .main_manu{     }
+      ul{      }
+    }
+  }
+}

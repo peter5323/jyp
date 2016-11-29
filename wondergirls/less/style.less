@@ -6,6 +6,7 @@
 
 *{margin:0; padding:0;}
 ul{list-style: none;}
+a{text-decoration: none;}
 
 // widht 값을 기준으로 설정하면 창을 축소 시키면 아래쪽으로 빈 공간이 나타난다
 html,body{height:100%;}
@@ -27,29 +28,37 @@ body{
 }
 
   header{
-    .outline();
+
     height:100px;
     background-color: rgba(255, 255, 255, 0.53);
+    padding:0 20px;
+    box-shadow: 0 2px 16px #666;
 
     h1{
-      background-image: url(@logo);
-      width:104px;
-      height:52px;
-      .outline();
-      float: left;
-      a{
-        text-indent: -999px;
-        font-size: 0px;
-        // display:block;을 주고 margin을 줘야 마진값이 들어간다
-        display: block;
-        margin:25px;
-        .outline();
-      }
 
+      float: left;
+
+       a{
+         background-image: url(@logo);
+         width:104px;
+         height:52px;
+         background-position: center;
+         background-repeat: no-repeat;
+         // display:block;을 주고 padding을 줘야 클릭 영역이 넓어진다
+         display: block;
+         padding:25px;
+        //  text를 사라지게 하는 법
+         appearance: none;
+         text-indent: -999px;
+         font-size: 0px;
+          &:hover{
+            transform: rotateY(180deg);
+          }
+        }
     }
     nav{
       float:right;
-      border: 1px #F00 solid;
+      
         .main_manu{
           display: none;
         }
@@ -58,9 +67,7 @@ body{
             height:100px;
             line-height: 100px;
 
-
             a{
-              .outline();
               // <a> 태그 디자인 없게 만들기
               text-decoration: none;
               padding:0 18px;
@@ -68,8 +75,15 @@ body{
               display: block;
               font-size: 16px;
               font-weight: bold;
-
+              color: #F28195;
+                &:hover{
+                  background-color: #FBF5E0;
+                  color: #ECD28F;
+                  border-top: 2px #F28195 solid;
+                }
             }
           }
+
     }
+
   }
