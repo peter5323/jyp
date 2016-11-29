@@ -9,6 +9,7 @@
 
   header{
     height:55px;
+    background-color: rgba(255,255,255,1);
 
     h1 a{
       background-image: url(@logo);
@@ -17,9 +18,11 @@
       background-position: center;
       background-repeat: no-repeat;
       display:block;
-      margin: :5px 0 0 10px;
+      margin: 5px 0 0 10px;
+      // @media를 실행 전에 전 padding: 값을 0으로 다시 세팅을 해줘야 한다
+      padding:0;
+
      //  text를 사라지게 하는 법
-      appearance: none;
       text-indent: -999px;
       font-size: 0px;
        &:hover{
