@@ -38,6 +38,7 @@ header h1 a {
   padding: 25px;
   text-indent: -999px;
   font-size: 0px;
+  transition: 1s;
 }
 header h1 a:hover {
   transform: rotateY(180deg);
